@@ -1,27 +1,64 @@
-# StcTaskFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+# STC Task
 
-## Development server
+Microservice responsible for managing employee and all operations related to it as CRUD operations and find all Employees and filter them
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Server:** Java, Spring Boot , Docker
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## API Reference
 
-## Running unit tests
+#### After running app, Access below Swagger Url 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```http
+  http://localhost:8085/stc/swagger-ui/index.html
+```
+## Run Remotely
 
-## Running end-to-end tests
+Run the Image
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  docker run -p 8085:8085 mohamedsaberfcih/stc-task:v1.0.0
+```
 
-## Further help
+Open Swagger
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+  [Click-Here](http://localhost:8085/stc/swagger-ui/index.html)
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/msaber2015/stc-task-frontend.git
+```
+
+Go to the project directory
+
+```bash
+  cd stc-task
+```
+
+Create docker image & Run container
+
+```bash
+  docker-compose up
+```
+
+Open Swagger
+
+
+  [Click-Here](http://localhost:8085/stc/swagger-ui/index.html)
+
+
+
+## Authors
+
+- [@msaber2015](https://github.com/msaber2015)
+
