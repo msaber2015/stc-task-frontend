@@ -1,37 +1,21 @@
 
-# STC Task
+# STC Task Frontend
 
-Microservice responsible for managing employee and all operations related to it as CRUD operations and find all Employees and filter them
-
+Microservice responsible for providing Frontend or UI control to managing employees
+through calling employees backend service
 
 ## Tech Stack
 
-**Server:** Java, Spring Boot , Docker
-
-
-## API Reference
-
-#### After running app, Access below Swagger Url 
-
-```http
-  http://localhost:8085/stc/swagger-ui/index.html
-```
-## Run Remotely
-
-Run the Image
-
-```bash
-  docker run -p 8085:8085 mohamedsaberfcih/stc-task:v1.0.0
-```
-
-Open Swagger
-
-
-  [Click-Here](http://localhost:8085/stc/swagger-ui/index.html)
-
+**Client:** Angular 17.0.0, NodeJs 20.11.0 , Docker, 
 
 
 ## Run Locally
+
+Run Backend Service
+
+```bash
+  Read ReadMe File on https://github.com/msaber2015/stc-task
+```
 
 Clone the project
 
@@ -39,22 +23,39 @@ Clone the project
   git clone https://github.com/msaber2015/stc-task-frontend.git
 ```
 
-Go to the project directory
+Go to the project directory by cmd
 
 ```bash
-  cd stc-task
+  cd stc-task-frontend
 ```
 
 Create docker image & Run container
 
 ```bash
-  docker-compose up
+  ng serve --open
 ```
 
-Open Swagger
+## Run Remotely
+
+Run Backend Service
+
+```bash
+  Read ReadMe File on https://github.com/msaber2015/stc-task
+```
+
+Run the Image
+
+```bash
+  docker run -p 8080:8080 mohamedsaberfcih/stc-task-frontend:v1.0.0
+```
+
+Open Browser
 
 
-  [Click-Here](http://localhost:8085/stc/swagger-ui/index.html)
+[Click-Here](http://localhost:8080)
+
+
+
 
 
 
