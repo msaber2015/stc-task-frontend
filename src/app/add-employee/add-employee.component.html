@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>Add Employee</h2>
+<mat-dialog-content class="mat-typography">
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Id</mat-label>
+    <input matInput type="number" [(ngModel)]="employee.id">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput type="text" [(ngModel)]="employee.firstName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-form-field">
+    <mat-label>Last Name</mat-label>
+    <input matInput type="text" [(ngModel)]="employee.lastName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-form-field">
+    <mat-label>Email</mat-label>
+    <input matInput type="text" [(ngModel)]="employee.email">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-form-field">
+    <mat-label>Phone</mat-label>
+    <input matInput type="text" [(ngModel)]="employee.phone">
+  </mat-form-field>
+  <br/>
+  <mat-form-field class="example-form-field">
+    <mat-label>Salary</mat-label>
+    <input matInput type="number" [(ngModel)]="employee.salary">
+  </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="submit()" cdkFocusInitial>Add</button>
+</mat-dialog-actions>

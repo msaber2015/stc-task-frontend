@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  client:
+    container_name: task-frontend
+    image: mohamedsaberfcih/stc-task-frontend:v1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './client:/app/client'
+      - '/app/client/node_modules'
+    ports:
+      - '4201:4200'
