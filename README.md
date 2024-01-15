@@ -9,7 +9,39 @@ through calling employees backend service
 **Client:** Angular 17.0.0, NodeJs 20.11.0 , Docker, 
 
 
-## Run Locally
+## Run Locally Using Angular CLI
+
+Run Backend Service
+
+```bash
+  Read ReadMe File on https://github.com/msaber2015/stc-task
+```
+
+Clone the project
+
+```bash
+  git clone https://github.com/msaber2015/stc-task-frontend.git
+```
+
+Go to the project directory by cmd
+
+```bash
+  cd stc-task-frontend
+```
+
+Run App
+
+```bash
+  ng serve --open
+```
+
+Open Browser App
+
+```bash
+  http://localhost:4200/
+```
+
+## Run Locally Using Docker Compose
 
 Run Backend Service
 
@@ -32,10 +64,16 @@ Go to the project directory by cmd
 Create docker image & Run container
 
 ```bash
-  ng serve --open
+  docker-compose up
 ```
 
-## Run Remotely
+Open Browser App
+
+```bash
+  http://localhost:4200/
+```
+
+## Run Locally Using Docker Hub Image
 
 Run Backend Service
 
@@ -46,13 +84,14 @@ Run Backend Service
 Run the Image
 
 ```bash
-  docker run -p 8080:8080 mohamedsaberfcih/stc-task-frontend:v1.0.0
+  docker run -p 4200:4200 mohamedsaberfcih/stc-task-frontend:v1.0.0
 ```
 
-Open Browser
+Open Browser App
 
-
-[Click-Here](http://localhost:8080)
+```bash
+  http://localhost:4200/
+```
 
 
 
